@@ -49,8 +49,7 @@ CREATE TABLE health_data (
     data_value NUMERIC,      -- Store as numeric, or in data_json for details
     data_json JSONB,         -- For storing structured info (e.g. sleep breakdown)
     measured_at TIMESTAMP WITH TIME ZONE NOT NULL,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-    INDEX_health_data_user_type_measured (user_id, data_type, measured_at)
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
 CREATE INDEX idx_health_data_user_type_measured ON health_data(user_id, data_type, measured_at DESC);
