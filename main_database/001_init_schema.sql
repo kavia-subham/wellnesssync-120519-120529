@@ -110,7 +110,7 @@ GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO wellness_app_user;
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO wellness_app_user;
 
 -- Analytics role: read-only, no PII
-GRANT CONNECT ON DATABASE myapp TO wellness_analytics;
+-- (Removed: GRANT CONNECT ON DATABASE myapp TO wellness_analytics;)
 GRANT USAGE ON SCHEMA public TO wellness_analytics;
 GRANT SELECT ON TABLE health_data, recommendations, outcomes TO wellness_analytics;
 
