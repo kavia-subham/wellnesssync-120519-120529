@@ -106,7 +106,7 @@ CREATE INDEX idx_outcomes_user_type_measured ON outcomes(user_id, outcome_type, 
 -- NOTE: Supabase applies RLS policies via its dashboard; here is a sample setup for native Postgres.
 
 -- Grant privileges for app user
-GRANT USAGE, SELECT, INSERT, UPDATE, DELETE ON ALL SEQUENCES IN SCHEMA public TO wellness_app_user;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO wellness_app_user;
 GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO wellness_app_user;
 
 -- Analytics role: read-only, no PII
