@@ -22,3 +22,13 @@ PostgreSQL: POSTGRES_URL, POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB, POSTGRE
 MySQL: MYSQL_URL, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB, MYSQL_PORT
 SQLite: SQLITE_DB
 MongoDB: MONGODB_URL, MONGODB_DB
+Testing postgres connection...
+✓ postgres connection successful
+- mysql: not configured
+- sqlite: not configured
+- mongodb: not configured
+Testing postgres connection...
+✓ postgres connection successful
+- mysql: not configured
+- sqlite: not configured
+- mongodb: not configured
