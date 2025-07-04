@@ -1,0 +1,24 @@
+Starting PostgreSQL setup...
+Found PostgreSQL version: 16
+PostgreSQL is already running on port 5000!
+Database: myapp
+User: appuser
+Port: 5000
+
+To connect to the database, use:
+psql -h localhost -U appuser -d myapp -p 5000
+Or use: psql postgresql://appuser:dbuser123@localhost:5000/myapp
+
+Script stopped - server already running.
+
+> simple-db-viewer@1.0.0 start
+> node server.js --host 0.0.0.0
+
+✓ postgres.env loaded (5 variables)
+Database viewer running on http://localhost:5001
+
+Environment variables expected:
+PostgreSQL: POSTGRES_URL, POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB, POSTGRES_PORT
+MySQL: MYSQL_URL, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB, MYSQL_PORT
+SQLite: SQLITE_DB
+MongoDB: MONGODB_URL, MONGODB_DB
